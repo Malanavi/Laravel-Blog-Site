@@ -1,0 +1,17 @@
+$title: #363838;
+$default: #5A5A5A;
+$accent: #FFBE32;
+$blue-white: #EDF7FF;
+
+%title-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+%title-h3 {
+    text-align: center;
+    color: $title;
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
+}
