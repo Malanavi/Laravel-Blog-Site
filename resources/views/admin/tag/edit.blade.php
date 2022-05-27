@@ -12,8 +12,9 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard v1</li>
+                            <li class="breadcrumb-item"><a href="{{route('admin.index')}}">Главная</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('tags.index')}}">Теги</a></li>
+                            <li class="breadcrumb-item active">Редактирование тега</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -30,7 +31,7 @@
                         @csrf
                         @method('PATCH')
                         <div class="form-group">
-                            <input type="text" class="form-control" name="title" placeholder="Название тега" value="{{$category->title}}">
+                            <input type="text" class="form-control" name="title" placeholder="Название тега" value="{{$tag->title}}">
                             @error('title')
                                 <div class="text-danger">Это поле необходимо для заполнения.</div>
                             @enderror

@@ -29,7 +29,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Blog', 'prefix' => 'blog'], f
 
 Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::group(['namespace' => 'Main'], function () {
-        Route::get('/', 'AdminController@index');
+        Route::get('/', 'AdminController@index')->name('admin.index');
     });
     Route::resource('categories', CategoryController::class);
     Route::resource('tags', TagController::class);
