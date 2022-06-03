@@ -34,19 +34,19 @@
                     <div class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link @yield('index_active')" href="/">Главная</a>
+                                <a class="menu__list-link @yield('index_active')" href="{{route('main.index')}}">Главная</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link @yield('services_active')" href="/services">Услуги</a>
+                                <a class="menu__list-link @yield('services_active')" href="{{route('main.services')}}">Услуги</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link @yield('about_active')" href="/about">О компании</a>
+                                <a class="menu__list-link @yield('about_active')" href="{{route('main.about')}}">О компании</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link @yield('contacts_active')" href="/contacts">Контакты</a>
+                                <a class="menu__list-link @yield('contacts_active')" href="{{route('main.contacts')}}">Контакты</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link @yield('blog_active')" href="/blog">Блог</a>
+                                <a class="menu__list-link @yield('blog_active')" href="{{route('blog.index')}}">Блог</a>
                             </li>
                         </ul>
                         <button class="menu__burger-button">

@@ -9,19 +9,19 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function index(): Factory|View|Application
+    public function index()
     {
         return view('index');
     }
-    public function about(): Factory|View|Application
+    public function about()
     {
         return view('about');
     }
-    public function contacts(): Factory|View|Application
+    public function contacts()
     {
         return view('contacts');
     }
-    public function services(): Factory|View|Application
+    public function services()
     {
         return view('services');
     }
