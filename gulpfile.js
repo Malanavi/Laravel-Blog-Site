@@ -42,7 +42,9 @@ function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
-        'resources/js/main.js'
+        'resources/js/aos.js',
+        'resources/js/bootstrap.js',
+        'resources/js/main.js',
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
@@ -64,13 +66,14 @@ function styles() {
 }
 
 function build() {
-    return src([
-        'app/css/style.min.css',
-        'app/fonts/**/*',
-        'app/js/main.min.js',
-        'app/*.html'
-    ], {base: 'app'})
-        .pipe(dest('dist'))
+    // return src([
+    //     'app/css/style.min.css',
+    //     'app/fonts/**/*',
+    //     'app/js/main.min.js',
+    //     'app/*.html'
+    // ], {base: 'app'})
+    //     .pipe(dest('dist'))
+    return null;
 }
 
 function watching() {

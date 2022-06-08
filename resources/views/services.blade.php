@@ -8,10 +8,10 @@
         <div class="container">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
+                    <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Services</a>
+                    <a class="breadcrumbs__link" href="#">Услуги</a>
                 </li>
             </ul>
         </div>

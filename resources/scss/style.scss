@@ -1,3 +1,5 @@
+@import 'bt';
+@import 'aos';
 @import 'vars';
 @import 'fonts';
 @import 'reset';
@@ -5,14 +7,6 @@
 @import 'global';
 
 .header {
-    // &__panel-info, &__panel-menu {
-    //     position: fixed;
-    //     left: 0;
-    //     right: 0;
-    // }
-    // &__panel-menu {
-    //     top: 85px;
-    // }
     &-offer {
         height: 100vh;
     }
@@ -301,7 +295,7 @@
             display: inline;
             padding-top: 22px;
         }
-        margin: 0px 15px;
+        margin: 0 15px;
         background: $accent;
         background: linear-gradient(to top right, #ffb923 0%, #ffcc5e 100%);
         box-shadow: 6px 6px 25px -2px rgba(0, 0, 0, 0.53);
@@ -351,7 +345,7 @@
 .footer {
     &__content {
         background-color: #DFDFDF;
-        padding: 60px 0px 60px;
+        padding: 60px 0 60px;
     }
     &__inner {
         display: flex;
@@ -398,7 +392,7 @@
         background-color: $title;
         color: #A1A1A1;
         text-align: center;
-        padding: 42px 0px;
+        padding: 42px 0;
     }
     &__social {
         width: 200px;
@@ -536,6 +530,7 @@
     //height: 400px;
     -webkit-user-select: none;
     margin-top: -56px;
+    //position: relative;
 
     &__title {
         @extend %title-font;
@@ -543,7 +538,9 @@
         font-size: 72px;
         line-height: 52px;
         text-align: center;
-        padding: 150px 0;
+        padding: 150px 0;/*
+        position: absolute;
+        z-index: 2;*/
     }
 }
 
@@ -638,7 +635,7 @@
     }
     &__item {
         text-align: center;
-        margin: 0px 15px;
+        margin: 0 15px;
         background: $accent;
         background: linear-gradient(to top right, #ffb923 0%, #ffcc5e 100%);
         box-shadow: 6px 6px 25px -2px rgba(0, 0, 0, 0.53);
@@ -688,5 +685,27 @@
     &__preview {
         background: url(../images/Backgrounds/services-bg.jpg) no-repeat;
         background-size: cover;
+    }
+}
+
+.blog {
+    &__preview {
+        background: url(../images/Backgrounds/blog-bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: 0 30%;
+        position: relative;
+    }
+    &__preview::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0.52);
+        top: 0;
+        z-index: 0;
+    }
+    &__preview-title {
+        position: relative;
+        z-index: 2;
     }
 }
