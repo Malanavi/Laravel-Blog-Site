@@ -42,7 +42,7 @@ class AdminPostController extends BaseController
     public function store(StoreRequest $request)
     {
         $data = $request->validated();
-        $this->service->store($data);
+        $this->postService->store($data);
         return redirect()->route('posts.index');
     }
 
@@ -80,7 +80,7 @@ class AdminPostController extends BaseController
     public function update(UpdateRequest $request, Post $post)
     {
         $data = $request->validated();
-        $post = $this->service->update($data, $post);
+        $post = $this->postService->update($data, $post);
         return view('admin.post.show', compact('post'));
     }
 

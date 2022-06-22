@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Admin\Post;
+namespace App\Http\Requests\Admin\Service;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -25,12 +25,11 @@ class UpdateRequest extends FormRequest
     {
         return [
             'title' => 'required|string',
+            'description' => 'required|string',
+            'price' => 'required|string',
             'content' => 'required|string',
             'preview_image' => 'nullable|file',
             'main_image' => 'nullable|file',
-            'category_id' => 'required|integer|exists:categories,id',
-            'tag_ids' => 'nullable|array',
-            'tag_ids.*' => 'nullable|integer|exists:tags,id',
         ];
     }
     public function messages()
@@ -38,16 +37,16 @@ class UpdateRequest extends FormRequest
         return [
             'title.required' => 'Это поле необходимо для заполнения',
             'title.string' => 'Введены данные не строчного типа',
+            'description.required' => 'Это поле необходимо для заполнения',
+            'description.string' => 'Введены данные не строчного типа',
+            'price.required' => 'Это поле необходимо для заполнения',
+            'price.string' => 'Введены данные не строчного типа',
             'content.required' => 'Это поле необходимо для заполнения',
             'content.string' => 'Введены данные не строчного типа',
             'preview_image.required' => 'Это поле необходимо для заполнения',
             'preview_image.file' => 'Необходимо выбрать файл',
             'main_image.required' => 'Это поле необходимо для заполнения',
             'main_image.file' => 'Необходимо выбрать файл',
-            'category_id.required' => 'Необходимо выбрать категорию',
-            'category_id.integer' => 'ID категории должен быть целым числом',
-            'category_id.exists' => 'ID категории должен быть в Базе Данных',
-            'tag_ids.array' => 'Необходимо отправить массив данных',
         ];
     }
 }

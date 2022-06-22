@@ -11,6 +11,7 @@
 |
 */
 
+use App\Http\Controllers\Admin\AdminServiceController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\AdminPostController;
 use App\Http\Controllers\Admin\TagController;
@@ -40,6 +41,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 
     Route::resource('categories', CategoryController::class);
     Route::resource('tags', TagController::class);
     Route::resource('posts', AdminPostController::class);
+    Route::resource('services', AdminServiceController::class);
     Route::resource('users', UserController::class);
 });
 
