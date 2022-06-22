@@ -5,9 +5,11 @@ $(function () {
         if (flag === 0) {
             $('#rightside-menu-trigger').attr('class', 'rightside-menu');
             flag = 1;
+            console.log("работает");
         } else {
             $('#rightside-menu-trigger').attr('class', 'rightside-menu rightside-menu--closed');
             flag = 0;
+            console.log("работает");
         }
     });
 

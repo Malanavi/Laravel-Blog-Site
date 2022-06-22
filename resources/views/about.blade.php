@@ -24,30 +24,30 @@
                 </div>
             </div>
         </div>
-        <div class="about__content">
+        <div class="post__content">
             <div class="container">
-                <div class="about__content-inner">
-                    <div class="about__list">
-                        <h5 class="about__list-title">О нас</h5>
-                        <ul class="about__list-items">
-                            <li class="about__list-item"><a href="#" class="about__list-link">Кто мы такие?</a></li>
-                            <li class="about__list-item"><a href="#" class="about__list-link">Что мы делаем?</a></li>
-                            <li class="about__list-item"><a href="#" class="about__list-link">Как мы работаем?</a></li>
-                            <li class="about__list-item"><a href="#" class="about__list-link">Наши проекты и блог.</a></li>
+                <div class="post__content-inner">
+                    <div class="post__list">
+                        <h5 class="post__list-title">О нас</h5>
+                        <ul class="post__list-items">
+                            <li class="post__list-item"><a href="#" class="post__list-link">Кто мы такие?</a></li>
+                            <li class="post__list-item"><a href="#" class="post__list-link">Что мы делаем?</a></li>
+                            <li class="post__list-item"><a href="#" class="post__list-link">Как мы работаем?</a></li>
+                            <li class="post__list-item"><a href="#" class="post__list-link">Наши проекты и блог.</a></li>
                         </ul>
                     </div>
-                    <div class="about__content-box">
-                        <div class="about__content-title">
-                            <h4 class="about__content-title-text">Кто мы такие?</h4>
+                    <div class="post__content-box">
+                        <div class="post__content-title">
+                            <h3 class="post__content-title-text">Кто мы такие?</h3>
                         </div>
-                        <div class="about__content-image">
+                        <div class="post__content-image">
                             <img src="{{asset('images/blog/about-img1.jpg')}}" alt="">
                         </div>
-                        <div class="about__content-text">
-                            <p class="about__content-text-item">Приветствую Вас от лица развивающейся компании ООО «Мир Вольта». Мы работаем уже не первый год, создали и создаём не мало систем электрификации и связи. Основным направлением компании является электрощитовое оборудование различного назначения. Принцип работы может быть любой, напряжением до 0,4 кВ.</p><br>
-                            <p class="about__content-text-item">Все мы прекрасно понимаем, что в данный период времени невозможно стандартизировать системы полностью, поэтому готовы рассматривать любое техническое задание.</p><br>
-                            <p class="about__content-text-item">Финансовая политика достаточно лояльна, любой ценник можно обсуждать, заменять составные части на разные фирмы более дешевого производителя.</p><br>
-                            <p class="about__content-text-item">Каждая составная часть нашей продукции сертифицируется отдельно, а продукция проверяется вся индивидуально.</p>
+                        <div class="post__content-text">
+                            <p class="post__content-text-item">Приветствую Вас от лица развивающейся компании ООО «Мир Вольта». Мы работаем уже не первый год, создали и создаём не мало систем электрификации и связи. Основным направлением компании является электрощитовое оборудование различного назначения. Принцип работы может быть любой, напряжением до 0,4 кВ.</p><br>
+                            <p class="post__content-text-item">Все мы прекрасно понимаем, что в данный период времени невозможно стандартизировать системы полностью, поэтому готовы рассматривать любое техническое задание.</p><br>
+                            <p class="post__content-text-item">Финансовая политика достаточно лояльна, любой ценник можно обсуждать, заменять составные части на разные фирмы более дешевого производителя.</p><br>
+                            <p class="post__content-text-item">Каждая составная часть нашей продукции сертифицируется отдельно, а продукция проверяется вся индивидуально.</p>
                         </div>
                     </div>
                 </div>

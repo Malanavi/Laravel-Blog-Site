@@ -84,8 +84,10 @@
 }
 
 .breadcrumbs {
-    background: rgba(#DFDFDF, .5);
+    background: rgba(#DFDFDF, .1);
     padding: 14px 0;
+    position: relative;
+    z-index: 3;
 
     &__list {
         display: flex;
@@ -549,6 +551,9 @@
         background: url(../images/Backgrounds/about-bg.jpg) no-repeat;
         background-size: cover;
     }
+}
+
+.post {
     & .container {
         height: 100%;
     }
@@ -605,6 +610,13 @@
     }
     &__content-text-item {
         text-indent: 25px;
+    }
+
+    &__related-posts-title {
+        padding-top: 80px;
+        margin-bottom: 60px;
+        @extend %title-h3;
+        font-size: 24px;
     }
 }
 
@@ -685,6 +697,12 @@
     &__preview {
         background: url(../images/Backgrounds/services-bg.jpg) no-repeat;
         background-size: cover;
+    }
+
+    &__title {
+        padding-top: 80px;
+        margin-bottom: 60px;
+        @extend %title-h3;
     }
 }
 

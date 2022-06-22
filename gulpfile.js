@@ -42,9 +42,9 @@ function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
+        'resources/js/main.js',
         'resources/js/aos.js',
         'resources/js/bootstrap.js',
-        'resources/js/main.js',
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())

@@ -12,10 +12,11 @@
 */
 
 use App\Http\Controllers\Admin\CategoryController;
-use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\AdminPostController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Blog\BlogController;
+use App\Http\Controllers\Post\PostController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -27,6 +28,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/services', 'MainController@services')->name('main.services');
     Route::group(['namespace' => '\Blog', 'prefix' => 'blog'], function () {
         Route::get('/', [BlogController::class, '__invoke'])->name('blog.index');
+        Route::get('/{post}', [PostController::class, '__invoke'])->name('post.show');
     });
 });
 
@@ -37,7 +39,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 
 
     Route::resource('categories', CategoryController::class);
     Route::resource('tags', TagController::class);
-    Route::resource('posts', PostController::class);
+    Route::resource('posts', AdminPostController::class);
     Route::resource('users', UserController::class);
 });
 

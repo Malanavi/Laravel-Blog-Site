@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="services__content">
-            <h3 class="services__call">Перечень услуг</h3>
+            <h3 class="services__title">Перечень услуг</h3>
             <div class="container">
                 <div class="services__content-inner">
                     <div class="services__items">

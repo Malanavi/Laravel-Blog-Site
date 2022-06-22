@@ -7,9 +7,8 @@ use App\Http\Requests\Admin\Post\UpdateRequest;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tag;
-use Storage;
 
-class PostController extends BaseController
+class AdminPostController extends BaseController
 {
     /**
      * Display a listing of the resource.
@@ -37,7 +36,7 @@ class PostController extends BaseController
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreRequest $request)
@@ -50,7 +49,7 @@ class PostController extends BaseController
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show(Post $post)
@@ -61,7 +60,7 @@ class PostController extends BaseController
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit(Post $post)
@@ -74,8 +73,8 @@ class PostController extends BaseController
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(UpdateRequest $request, Post $post)
@@ -88,7 +87,7 @@ class PostController extends BaseController
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy(Post $post)
@@ -97,3 +96,18 @@ class PostController extends BaseController
         return redirect()->route('posts.index');
     }
 }
+
+
+//namespace App\Http\Controllers\Admin;
+//
+//use App\Http\Requests\Admin\Post\StoreRequest;
+//use App\Http\Requests\Admin\Post\UpdateRequest;
+//use App\Models\Category;
+//use App\Models\Post;
+//use App\Models\Tag;
+//use Storage;
+//
+//class AdminPostController extends BaseController
+//{
+//
+//}
