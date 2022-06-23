@@ -21,6 +21,14 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a href="{{route('services.index')}}" class="nav-link">
+                    <i class="nav-icon fas fa-concierge-bell"></i>
+                    <p>
+                        Услуги
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="{{route('posts.index')}}" class="nav-link">
                     <i class="nav-icon fas fa-clipboard-list"></i>
                     <p>

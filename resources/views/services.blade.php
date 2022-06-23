@@ -10,9 +10,7 @@
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Услуги</a>
-                </li>
+                <li class="breadcrumbs__item">Услуги</li>
             </ul>
         </div>
     </div>
@@ -29,24 +27,17 @@
             <div class="container">
                 <div class="services__content-inner">
                     <div class="services__items">
-                        <div class="services__item">
-                            <div class="services__icon-bg">
-                                <img class="services__icon" src="{{asset('images/phone.png')}}" alt="Качество">
+                        @foreach($services as $service)
+                            <div class="services__card">
+                                <img src="{{'storage/' . $service->preview_image}}" alt="Мир Вольта - Услуга">
+                                <div class="services__card-body card-body">
+                                    <h5 class="services__card-title card-title">{{$service->title}}</h5>
+                                    <p class="services__card-text card-text">{{$service->description}}</p>
+                                    <p class="services__card-price card-price"><small class="text-muted">{{$service->price}}</small></p>
+                                    <a class="services__card-button button" href="{{route('service.show', $service->id)}}">Подробнее</a>
+                                </div>
                             </div>
-                            <h4 class="services__item-title">Позвоните нам</h4>
-                            <div class="services__text-box">
-                                <p class="services__item-text"><a class="services__item-link" href="tel:+79113885777">+7 (911) 388-57-77</a></p>
-                            </div>
-                        </div>
-                        <div class="services__item">
-                            <div class="services__icon-bg">
-                                <img class="services__icon" src="{{asset('images/mail.png')}}" alt="Быстро">
-                            </div>
-                            <h4 class="services__item-title">Напишите на почту</h4>
-                            <div class="services__text-box">
-                                <p class="services__item-text"><a class="services__item-link" href="mailto:Mirvolta@bk.ru">Mirvolta@bk.ru</a></p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

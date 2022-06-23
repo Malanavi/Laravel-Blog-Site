@@ -14,7 +14,8 @@ class ServiceService
         try {
             DB::beginTransaction();
             $data['preview_image'] = Storage::disk('public')->put('/images/services', $data['preview_image']);
-            $data['main_image'] = Storage::disk('public')->put('/images', $data['main_image']);
+            $data['main_image'] = Storage::disk('public')->put('/images/services', $data['main_image']);
+            Service::firstOrCreate($data);
             DB::commit();
         } catch (Exception $exception) {
             DB::rollBack();

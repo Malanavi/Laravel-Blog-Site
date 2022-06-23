@@ -54,7 +54,7 @@
         @yield('content')
 
     <footer class="main-footer">
-        <strong>Blog</strong>
+        <strong>Панель администратора сайта <a href="{{route('main.index')}}">Мир Вольта</a></strong>
     </footer>
 
     <!-- Control Sidebar -->

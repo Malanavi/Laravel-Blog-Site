@@ -11,8 +11,9 @@
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">О компании</a>
+                    <a class="breadcrumbs__link" href="#">Блог</a>
                 </li>
+                <li class="breadcrumbs__item">{{$post->title}}</li>
             </ul>
         </div>
     </div>

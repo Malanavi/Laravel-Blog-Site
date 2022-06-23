@@ -26,11 +26,16 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'MainController@index')->name('main.index');
     Route::get('/about', 'MainController@about')->name('main.about');
     Route::get('/contacts', 'MainController@contacts')->name('main.contacts');
-    Route::get('/services', 'MainController@services')->name('main.services');
+//    Route::get('/services', 'MainController@services')->name('main.services');
+    Route::group(['prefix' => 'services'], function () {
+        Route::get('/', 'MainController@services')->name('main.services');
+        Route::get('/{service}', 'MainController@service')->name('service.show');
+    });
     Route::group(['namespace' => '\Blog', 'prefix' => 'blog'], function () {
         Route::get('/', [BlogController::class, '__invoke'])->name('blog.index');
         Route::get('/{post}', [PostController::class, '__invoke'])->name('post.show');
     });
+
 });
 
 Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {

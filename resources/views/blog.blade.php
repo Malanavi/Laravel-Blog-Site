@@ -10,9 +10,7 @@
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Блог</a>
-                </li>
+                <li class="breadcrumbs__item">Блог</li>
             </ul>
         </div>
     </div>

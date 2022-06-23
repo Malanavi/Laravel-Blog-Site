@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Contracts\View\View;
-use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Http\Request;
+use App\Models\Service;
 
 class MainController extends Controller
 {
@@ -23,6 +20,11 @@ class MainController extends Controller
     }
     public function services()
     {
-        return view('services');
+        $services = Service::paginate(6);
+        return view('services', compact('services'));
+    }
+    public function service(Service $service)
+    {
+        return view('service', compact('service'));
     }
 }

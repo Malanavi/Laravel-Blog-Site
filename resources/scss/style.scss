@@ -101,8 +101,11 @@
     &__item:last-child::after {
         content: '';
     }
-    &__link {
+    &__item {
         font-size: 14px;
+        color: $blue-white;
+    }
+    &__link {
         color: $blue-white;
     }
 }
@@ -703,6 +706,36 @@
         padding-top: 80px;
         margin-bottom: 60px;
         @extend %title-h3;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+    &__card {
+        //margin: 0 5px 10px 5px;
+        max-width: 370px;
+        background: #e5e5e7;
+        padding: 23px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+    &__card img {
+        border-radius: 5px;
+        height: 350px;
+        width: 100%;
+    }
+    &__card-title {
+        color: $title;
+        @extend %title-font;
+        font-size: 24px;
+    }
+    &__card-price {
+        padding-top: 5px;
+        margin-bottom: 30px;
+    }
+    &__card-button {
+        padding: 10px 20px 10px 20px;
     }
 }
 
