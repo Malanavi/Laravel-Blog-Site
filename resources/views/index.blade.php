@@ -12,7 +12,7 @@
                 <h2 class="offer__title">Строительство</h2>
                 <h2 class="offer__title">Электромонтаж</h2>
                 <div class="offer__subtitle">
-                    <p class="offer__subtitle-text">Мы быстро и качественно решаем любую вашу проблему</p>
+                    <p class="offer__subtitle-text">Мы быстро и качественно решаем любые ваши задачи</p>
                 </div>
                 <a class="offer__link" href="#">Подробнее о наших преимуществах</a>
                 <button class="offer__button button">Оставить заявку</button>
@@ -23,6 +23,31 @@
         <span class="offer-arrow__text">Узнать подробнее...</span>
         <img class="offer-arrow__img" src="{{asset('images/arrow.svg')}}" alt="Узнать подробнее">
     </div>
+    <div class="popups">
+        <div class="popups__inner" id="popup-offer-trigger">
+            <div class="popups__popup popups__offer-popup">
+                <a class="popups__close-button">X</a>
+                <h3 class="popups__popup-label">Оставить заявку</h3>
+                <p class="popups__popup-description">Мы свяжемся с Вами в ближайшее время</p>
+                <form action="">
+                    <div class="popups__popup-item">
+                        <input type="text" name="name" placeholder="Введите Имя">
+                    </div>
+                    <div class="popups__popup-item">
+                        <input type="text" name="number" placeholder="Введите номер телефона">
+                    </div>
+                    <div class="popups__popup-item">
+                        <input type="text" name="email" placeholder="Введите E-mail">
+                    </div>
+                    <div class="popups__popup-item">
+                        <span>Комментарий (описание задачи): </span>
+                        <textarea name="comment" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <button class="popups__popup-button button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('content')
@@ -31,23 +56,17 @@
             <div class="container">
                 <div class="slider__item-inner">
                     <h3 class="slider__title">ПРОВОДКА</h3>
-                    <h4 class="slider__subtitle">КВАРТИРЫ, ДОМА, ПОМЕЩЕНИЯ</h4>
-                    <p class="slider__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>
+                    <h4 class="slider__subtitle">В КВАРТИРХ, ДОМАХ, И ДРУГИХ ПОМЕЩЕНИЯХ</h4>
+                    <p class="slider__text">В своём стремлении повысить качество жизни, они забывают, что убеждённость некоторых оппонентов играет определяющее значение для позиций, занимаемых участниками в отношении поставленных задач. Банальные, но неопровержимые выводы, а также некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут описаны максимально подробно.</p>
                 </div>
             </div>
         </div>
         <div class="slider__item slider__item--2">
             <div class="container">
                 <div class="slider__item-inner">
-                    <h3 class="slider__title">СБОР и ПЕРЕБОР</h3>
-                    <h4 class="slider__subtitle">ЭЛЕКТРИЧЕСКИХ ЩИТОВ любых видов</h4>
-                    <p class="slider__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>
+                    <h3 class="slider__title">СБОР И МОДЕРНИЗАЦИЯ</h3>
+                    <h4 class="slider__subtitle">ЭЛЕКТРОЩИТОВОГО ОБОРУДОВАНИЯ ЛЮБЫХ ВИДОВ</h4>
+                    <p class="slider__text">В рамках спецификации современных стандартов, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности! В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение нашей деятельности требует анализа новых предложений.</p>
                 </div>
             </div>
         </div>
@@ -55,23 +74,17 @@
             <div class="container">
                 <div class="slider__item-inner">
                     <h3 class="slider__title">УСТАНОВКА</h3>
-                    <h4 class="slider__subtitle">РОЗЕТОК, ВЫКЛЮЧАТЕЛЕЙ, СВЕТИЛЬНИКОВ, ЛЮСТР</h4>
-                    <p class="slider__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>
+                    <h4 class="slider__subtitle">РОЗЕТОК, ВЫКЛЮЧАТЕЛЕЙ, СВЕТИЛЬНИКОВ</h4>
+                    <p class="slider__text">Противоположная точка зрения подразумевает, что стремящиеся вытеснить традиционное производство, нанотехнологии объективно рассмотрены соответствующими инстанциями. Прежде всего, граница обучения кадров способствует подготовке и реализации экономической целесообразности принимаемых решений.</p>
                 </div>
             </div>
         </div>
         <div class="slider__item slider__item--4">
             <div class="container">
                 <div class="slider__item-inner">
-                    <h3 class="slider__title">ОДНОВРЕМЕННАЯ ЗАКЛАДКА КАБЕЛЕЙ</h3>
+                    <h3 class="slider__title">ОДНОВРЕМЕННАЯ УКЛАДКА КАБЕЛЕЙ</h3>
                     <h4 class="slider__subtitle">ПОД ИНТЕРНЕТ, ТЕЛЕВИДЕНИЕ И ВИДЕОНАБЛЮДЕНИЕ</h4>
-                    <p class="slider__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>
+                    <p class="slider__text">Ясность нашей позиции очевидна: начало повседневной работы по формированию позиции является качественно новой ступенью первоочередных требований. С другой стороны, существующая теория выявляет срочную потребность системы массового участия.</p>
                 </div>
             </div>
         </div>
@@ -80,9 +93,8 @@
                 <div class="slider__item-inner">
                     <h3 class="slider__title">и это еще</h3>
                     <h4 class="slider__subtitle">далеко не все</h4>
-                    <p class="slider__text">Полный список наших услуг можно узнать <a href="#">здесь</a>. Если решения
-                        вашей проблемы нет в списке, не стоит отчаиваться! Наши специалисты смогут решить любую задачу!
-                        И даже больше.</p>
+                    <p class="slider__text">С полный спектром наших услуг можно ознакомиться <a href="#">здесь</a>. Если вы не нашли подходящей услуги, не стоит отчаиваться! Наши специалисты смогут предложить оптимальное решение под ваши нужды.
+                        </p>
                 </div>
             </div>
         </div>
@@ -96,24 +108,21 @@
                         <img class="advantages__icon" src="{{asset('images/award.svg')}}" alt="Качество">
                     </div>
                     <h4 class="advantages__item-title">Качество</h4>
-                    <p class="advantages__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                        commodo</p>
+                    <p class="advantages__item-text">Только надёжные и проверенные поставщики, высококвалифицированные сотрудники</p>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon-bg">
                         <img class="advantages__icon" src="{{asset('images/speed.svg')}}" alt="Быстро">
                     </div>
-                    <h4 class="advantages__item-title">Быстро</h4>
-                    <p class="advantages__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                        commodo</p>
+                    <h4 class="advantages__item-title">В срок</h4>
+                    <p class="advantages__item-text">Ответственное и качественное исполенение. Строгая оптимизация рабочих процессов.</p>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon-bg">
                         <img class="advantages__icon" src="{{asset('images/price.svg')}}" alt="Низкая цена">
                     </div>
-                    <h4 class="advantages__item-title">По справедливой цене</h4>
-                    <p class="advantages__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                        commodo</p>
+                    <h4 class="advantages__item-title">По оптимальной цене</h4>
+                    <p class="advantages__item-text">У нас гибкая финансовая политика. Мы учитываем ваши пожелания и финансовые возможности.</p>
                 </div>
             </div>
             <div class="action">
@@ -129,40 +138,21 @@
             </div>
         </div>
     </div>
-    <!-- <div class="partners">
-      <div class="container">
-        <div class="partners__inner">
-          <h3 class="partners__title">Наши партнеры</h3>
-          <div class="partners__items">
-            <div class="partners__item"></div>
-            <div class="partners__item"></div>
-            <div class="partners__item"></div>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <section class="blog-box">
         <div class="container">
             <h3 class="blog-box__title">Наши проекты и блог</h3>
             <div class="blog-box__items">
-                <div class="blog-box__item">
-                    <a class="blog-box__img-link" href="#">
-                        <img class="blog-box__img" src="{{asset('images/blog/1.png')}}" alt="">
-                    </a>
-                    <span class="blog-box__item-date">17 мая, 2022 12:11</span>
-                    <a class="blog-box__title-link" href="">
-                        <h4 class="blog-box__item-title">Закончили объект</h4>
-                    </a>
-                </div>
-                <div class="blog-box__item">
-                    <a class="blog-box__img-link" href="#">
-                        <img class="blog-box__img" src="{{asset('images/blog/2.jpg')}}" alt="">
-                    </a>
-                    <span class="blog-box__item-date">16 мая, 2022 18:39</span>
-                    <a class="blog-box__title-link" href="">
-                        <h4 class="blog-box__item-title">Топ 5 электрощитов под ваши задачи</h4>
-                    </a>
-                </div>
+                @foreach($posts as $post)
+                    <div class="blog-box__item">
+                        <a class="blog-box__img-link" href="{{route('post.show', $post->id)}}">
+                            <img class="blog-box__img" src="{{'storage/' . $post->preview_image}}" alt="Мир Вольта - Блог">
+                        </a>
+                        <span class="blog-box__item-date">{{$post->created_at}}</span>
+                        <a class="blog-box__title-link" href="{{route('post.show', $post->id)}}">
+                            <h4 class="blog-box__item-title">{{$post->title}}</h4>
+                        </a>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>

@@ -91,7 +91,7 @@
                 <div class="footer__inner">
                     <div class="footer__info">
                         <a class="logo footer__logo" href="#">
-                            <img src="{{asset('images/logo/logo.svg')}}" alt="Мир Вольта"/>
+                            <img class="mb-2" src="{{asset('images/logo/logo.svg')}}" alt="Мир Вольта"/>
                         </a>
                         <p class="footer__info-text">
                             Наш коллектив является дочерней компанией ООО «Бюро Торговли и Строительства», которая занимается строительством объектов и сельскохозяйственных ферм.
@@ -118,16 +118,29 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__map">
-                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/25/pskov/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Псков</a><a href="https://yandex.ru/maps/25/pskov/?ll=28.301232%2C57.830072&utm_medium=mapframe&utm_source=maps&z=18.85" style="color:#eee;font-size:12px;position:absolute;top:14px;">Псков — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUFbTSgTA" height="200" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-                        <p>г. Псков, улица Алмазная, д. 6/2</p>
+                    <div class="footer__contacts">
+                        <h6 class="footer__contacts-title">Контакты</h6>
+                        <ul class="footer__contacts-items">
+                            <li class="footer__contacts-item  footer__contacts-item--ofc">
+                                <a class="footer__contacts-link" href="https://vk.com/wvolt">г. Псков, улица Алмазная, д. 6/2</a>
+                            </li>
+                            <li class="footer__contacts-item footer__contacts-item--num">
+                                <a class="footer__contacts-link" href="mailto:Mirvolta@bk.ru">+7 (911) 388-57-77</a>
+                            </li>
+                            <li class="footer__contacts-item footer__contacts-item--num">
+                                <a class="footer__contacts-link" href="tel:+79113885777">+7 (911) 897-29-82</a>
+                            </li>
+                            <li class="footer__contacts-item footer__contacts-item--em">
+                                <a class="footer__contacts-link" href="tel:+79118972982">Mirvolta@bk.ru</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer__copyright">
             <div class="container">
-                <p>Copyright</p>
+                <p>ООО "Мир Вольта" © 2022</p>
             </div>
         </div>
     </footer>

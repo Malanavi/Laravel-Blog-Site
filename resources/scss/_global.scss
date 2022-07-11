@@ -12,7 +12,9 @@ body {
 	overflow-x: hidden;
 	min-width: 320px;
 }
-
+a {
+    color: $default;
+}
 a:hover {
     color: inherit;
 }

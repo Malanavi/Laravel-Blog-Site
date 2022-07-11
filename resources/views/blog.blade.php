@@ -44,7 +44,7 @@
                                             </h3>
                                             <div class="mb-1 text-muted">{{$post->created_at}}</div>
                                             <p class="card-text mb-auto">Здесь возможно будет краткая часть статьи</p>
-                                            <a href="{{{route('post.show', $post->id)}}}">Читать полностью</a>
+                                            <a href="{{route('post.show', $post->id)}}">Читать полностью</a>
                                         </div>
                                         <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Превью поста" style="width: 200px; height: 250px;" src="{{'storage/' . $post->preview_image}}" data-holder-rendered="true">
                                     </div>
