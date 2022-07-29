@@ -15,7 +15,7 @@
     <header class="header @yield('header_offer')">
         <div class="header__inner">
             <div class="header__panel-info">
-                <a class="logo header__logo" href="#">
+                <a class="logo header__logo" href="{{route('main.index')}}">
                     <img src="{{asset('images/logo/logo.svg')}}" alt="Мир Вольта" />
                 </a>
                 <ul class="header__contacts">
@@ -50,32 +50,32 @@
                                 <a class="menu__list-link @yield('blog_active')" href="{{route('blog.index')}}">Блог</a>
                             </li>
                         </ul>
-                        <button class="menu__burger-button">
-                            <img src="{{asset('images/menu_burger.svg')}}" alt="Новости" />
-                        </button>
-                        <div id="rightside-menu-trigger" class="rightside-menu rightside-menu--closed">
-                            <div class="rightside-menu__news"><h6>Новости</h6></div>
-                            <div class="rightside-menu__content">
-                                <div class="rightside-menu__card">
-                                    <h4 class="rightside-menu__title">
-                                        Сложная задача была успешно выполнена
-                                    </h4>
-                                    <p class="rightside-menu__subtitle">
-                                        Задача была очень трудной, но мы справились.
-                                    </p>
-                                    <a class="rightside-menu__learn-more-button" href="#">Подробнее</a>
-                                </div>
-                                <div class="rightside-menu__card">
-                                    <h4 class="rightside-menu__title">
-                                        Сложная задача была успешно выполнена
-                                    </h4>
-                                    <p class="rightside-menu__subtitle">
-                                        Задача была очень трудной, но мы справились.
-                                    </p>
-                                    <a class="rightside-menu__learn-more-button" href="#">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
+{{--                        <button class="menu__burger-button">--}}
+{{--                            <img src="{{asset('images/menu_burger.svg')}}" alt="Новости" />--}}
+{{--                        </button>--}}
+{{--                        <div id="rightside-menu-trigger" class="rightside-menu rightside-menu--closed">--}}
+{{--                            <div class="rightside-menu__news"><h6>Новости</h6></div>--}}
+{{--                            <div class="rightside-menu__content">--}}
+{{--                                <div class="rightside-menu__card">--}}
+{{--                                    <h4 class="rightside-menu__title">--}}
+{{--                                        Сложная задача была успешно выполнена--}}
+{{--                                    </h4>--}}
+{{--                                    <p class="rightside-menu__subtitle">--}}
+{{--                                        Задача была очень трудной, но мы справились.--}}
+{{--                                    </p>--}}
+{{--                                    <a class="rightside-menu__learn-more-button" href="#">Подробнее</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="rightside-menu__card">--}}
+{{--                                    <h4 class="rightside-menu__title">--}}
+{{--                                        Сложная задача была успешно выполнена--}}
+{{--                                    </h4>--}}
+{{--                                    <p class="rightside-menu__subtitle">--}}
+{{--                                        Задача была очень трудной, но мы справились.--}}
+{{--                                    </p>--}}
+{{--                                    <a class="rightside-menu__learn-more-button" href="#">Подробнее</a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>

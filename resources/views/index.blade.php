@@ -29,19 +29,39 @@
                 <a class="popups__close-button">X</a>
                 <h3 class="popups__popup-label">Оставить заявку</h3>
                 <p class="popups__popup-description">Мы свяжемся с Вами в ближайшее время</p>
-                <form action="">
+                <form id="contactform" method="POST">
+                    @csrf
+                    <div id="sendmessage">
+                        Ваше сообщение отправлено!
+                    </div>
+                    <div id="senderror">
+                        При отправке сообщения произошла ошибка. Продублируйте его, пожалуйста, на почту администратора <span>{{ env('MAIL_ADMIN_EMAIL') }}</span>
+                    </div>
+
                     <div class="popups__popup-item">
-                        <input type="text" name="name" placeholder="Введите Имя">
+                        <input type="text" name="name" placeholder="Введите Имя" value="{{old('name')}}">
+                        @error('name')
+                        <div class="text-danger">{{$message}}</div>
+                        @enderror
                     </div>
                     <div class="popups__popup-item">
-                        <input type="text" name="number" placeholder="Введите номер телефона">
+                        <input type="text" name="phone" placeholder="Введите номер телефона" value="{{old('phone')}}">
+                        @error('phone')
+                        <div class="text-danger">{{$message}}</div>
+                        @enderror
                     </div>
                     <div class="popups__popup-item">
-                        <input type="text" name="email" placeholder="Введите E-mail">
+                        <input type="email" name="email" placeholder="Введите E-mail (опционально)" value="{{old('email')}}">
+                        @error('email')
+                        <div class="text-danger">{{$message}}</div>
+                        @enderror
                     </div>
                     <div class="popups__popup-item">
                         <span>Комментарий (описание задачи): </span>
-                        <textarea name="comment" id="" cols="30" rows="5"></textarea>
+                        <textarea name="comment" id="" cols="30" rows="5">{{old('comment')}}</textarea>
+                        @error('comment')
+                        <div class="text-danger">{{$message}}</div>
+                        @enderror
                     </div>
                     <button class="popups__popup-button button">Отправить</button>
                 </form>
@@ -93,7 +113,7 @@
                 <div class="slider__item-inner">
                     <h3 class="slider__title">и это еще</h3>
                     <h4 class="slider__subtitle">далеко не все</h4>
-                    <p class="slider__text">С полный спектром наших услуг можно ознакомиться <a href="#">здесь</a>. Если вы не нашли подходящей услуги, не стоит отчаиваться! Наши специалисты смогут предложить оптимальное решение под ваши нужды.
+                    <p class="slider__text">С полный спектром наших услуг можно ознакомиться <a href="{{route('main.services')}}">здесь</a>. Если вы не нашли подходящей услуги, не стоит отчаиваться! Наши специалисты смогут предложить оптимальное решение под ваши нужды.
                         </p>
                 </div>
             </div>

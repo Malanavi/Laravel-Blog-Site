@@ -43,4 +43,34 @@ $(function () {
     $('.popups__close-button').on('click', function () {
         $('#popup-offer-trigger').attr('class', 'popups__inner');
     });
+
+    // action="{{route('mail.send')}}"
+
+    $('#contactform').on('submit', function (e) {
+        e.preventDefault(); // Прерывание стандартного подтверждения отправки формы. Если его не прервать, то вместо нашего кода Laravel пытался бы отправить запрос на action формы, которого нет, и мы получали бы ошибку о несуществующем URL.
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+            }
+        });
+        $.ajax({
+            type: 'POST',
+            url: '/send',
+            data: $('#contactform').serialize(),
+            success: function (data) {
+                if (!data.result) {
+                    $('#senderror').hide();
+                    $('#sendmessage').show();
+                } else {
+                    $('#senderror').show();
+                    $('#sendmessage').hide();
+                }
+            },
+            error: function () {
+                $('#senderror').show();
+                $('#sendmessage').hide();
+            }
+        });
+    });
 })
